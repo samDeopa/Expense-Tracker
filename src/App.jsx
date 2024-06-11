@@ -1,0 +1,54 @@
+import "./App.css";
+import DisplayCard from "./components/DisplayCard/DisplayCard";
+import StatChart from "./components/PieChart/StatChart";
+
+function App() {
+  return (
+    <div className="container">
+      <p className="title">Expense Tracker</p>
+      <div className="dashboard">
+        <DisplayCard
+          amount={500}
+          title={"Wallet Balance"}
+          button={"Add Income"}
+          gradient={"linear-gradient(90deg, #B5DC52 0%, #89E148 100%)"}
+          color={"#9DFF5B"}
+        />
+        <DisplayCard
+          amount={500}
+          title={"Expenses"}
+          button={"Add Expense"}
+          gradient={
+            "linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%)"
+          }
+          color={"#F4BB4A"}
+        />
+        <StatChart />
+      </div>
+      <div className="section">
+        <div>
+          <p className="subHeadding">Recent Transactions</p>
+          <div
+            style={{
+              width: "738px",
+              height: "345px",
+              backgroundColor: "white",
+            }}
+          ></div>
+        </div>
+        <div>
+          <p className="subHeadding">Top Expenses</p>
+          <div
+            style={{
+              width: "417px",
+              height: "345px",
+              backgroundColor: "white",
+            }}
+          ></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;

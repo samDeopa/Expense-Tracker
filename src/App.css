@@ -1,0 +1,33 @@
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  background-color: #626262;
+  height: 269px;
+
+  border-radius: 10px;
+  align-items: center;
+}
+.title {
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.77px;
+  text-align: left;
+}
+.container {
+  background-color: #3b3b3b;
+  padding: 0px 40px;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subHeadding {
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32.17px;
+  text-align: left;
+}
