@@ -1,6 +1,9 @@
 import "./App.css";
+import BalanceModal from "./components/BalanceModal/BalanceModal";
+import BarGraphComponent from "./components/BarGraphComponent/BarGraphComponent";
 import DisplayCard from "./components/DisplayCard/DisplayCard";
 import StatChart from "./components/PieChart/StatChart";
+import TransactionList from "./components/TransactionList/TransactionList";
 
 function App() {
   return (
@@ -28,23 +31,21 @@ function App() {
       <div className="section">
         <div>
           <p className="subHeadding">Recent Transactions</p>
-          <div
-            style={{
-              width: "738px",
-              height: "345px",
-              backgroundColor: "white",
-            }}
-          ></div>
+
+          <TransactionList
+            Transactions={[
+              {
+                name: "same",
+                price: 22,
+                category: "food",
+                date: new Date().toDateString(),
+              },
+            ]}
+          />
         </div>
         <div>
           <p className="subHeadding">Top Expenses</p>
-          <div
-            style={{
-              width: "417px",
-              height: "345px",
-              backgroundColor: "white",
-            }}
-          ></div>
+          <BarGraphComponent />
         </div>
       </div>
     </div>
