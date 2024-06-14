@@ -1,5 +1,4 @@
 import "./App.css";
-import BalanceModal from "./components/BalanceModal/BalanceModal";
 import BarGraphComponent from "./components/BarGraphComponent/BarGraphComponent";
 import DisplayCard from "./components/DisplayCard/DisplayCard";
 import StatChart from "./components/PieChart/StatChart";
